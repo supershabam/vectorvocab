@@ -281,21 +281,6 @@ This project uses modern Python tools:
 - **[uv](https://github.com/astral-sh/uv)** - Ultra-fast package manager (10-100x faster than pip)
 - **[ruff](https://github.com/astral-sh/ruff)** - Ultra-fast linter & formatter (10-100x faster than flake8/black)
 
-## Project Structure
-
-```
-vectorvocab/
-├── vectorvocab.py            # Main demo
-├── interactive.py            # Interactive explorer
-├── examples.py               # Pre-configured examples
-├── vector_convergence.py     # Convergence analysis
-├── ollama_client.py          # Ollama API client
-├── utils.py                  # Shared utilities
-├── vector_library.py         # Vector persistence
-├── Makefile                  # Development automation
-└── pyproject.toml            # Python project config
-```
-
 ## Resources
 
 ### Ollama
