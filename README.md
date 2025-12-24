@@ -17,8 +17,8 @@ Explore word embeddings and vector arithmetic using **Ollama** for completely lo
 1. **Generate Embeddings**: Uses local Ollama models to create vector representations of words
 2. **Compute Semantic Vectors**: Calculates relationship vectors (e.g., "masculinity") by analyzing word pairs
 3. **Apply to New Words**: Adds computed vectors to discover semantic relationships
-4. **Analyze Convergence** 🆕: Rank how well different word pairs converge onto similar vectors
-5. **Track Models** 🆕: All scripts log which embedding model is used for reproducibility
+4. **Analyze Convergence**: Rank how well different word pairs converge onto similar vectors
+5. **Track Models**: All scripts log which embedding model is used for reproducibility
 
 ## Quick Start
 
@@ -44,7 +44,7 @@ powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ### 2. Setup Project
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/supershabam/vectorvocab.git
 cd vectorvocab
 
 # Initialize project (creates venv and installs deps)
@@ -121,7 +121,7 @@ make examples
 # Or: uv run python examples.py
 ```
 
-Runs 50+ pre-configured analogies across categories:
+Runs 25+ pre-configured analogies across categories:
 - Gender relationships
 - Geographic capitals
 - Verb tenses
@@ -208,8 +208,9 @@ The project computes relationship vectors (like gender, geography, size) and app
 
 🔍 Connecting to Ollama...
 ✓ Connected to Ollama
-  Model: nomic-embed-text
-  Host: http://localhost:11434
+📊 EMBEDDING MODEL: nomic-embed-text
+📏 Vector Dimensions: 768
+🌐 Host: http://localhost:11434
 
 ============================================================
 Classic Word Analogy: king - man + woman = ?
@@ -251,7 +252,7 @@ make interactive          # Interactive exploration
 make examples             # Run example analogies
 make convergence          # Analyze vector convergence
 
-# Vector persistence (NEW!)
+# Vector persistence
 make vector-save          # Save a converged vector
 make vector-list          # List saved vectors
 make vector-apply         # Apply saved vector to words
